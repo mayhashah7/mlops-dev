@@ -10,7 +10,7 @@ variables:
     - template: ../../../../config-infra-dev.yml
 - name: version
   value: aml-cli-v2 
-- name: endpoint_name
+- name: taxi-nyc-mayha
   value: taxi-online-$(namespace)$(postfix)$(environment)
 - name: endpoint_type
   value: online
