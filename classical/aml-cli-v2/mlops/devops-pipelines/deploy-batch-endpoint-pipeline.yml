@@ -53,7 +53,7 @@ stages:
           cluster_tier: dedicated
       - template: templates/${{ variables.version }}/create-endpoint.yml@mlops-templates
         parameters: 
-          endpoint_file: mlops/azureml/deploy/batch/batch-endpoint.yml
+          endpoint_file: mlops-dev/classical/aml-cli-v2/mlops/azureml/deploy/batch/batch-endpoint.yml
       - template: templates/${{ variables.version }}/create-deployment.yml@mlops-templates
         parameters:
           deployment_name: taxi-batch-dp
